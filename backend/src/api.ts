@@ -31,6 +31,9 @@ router.post("/room", async (req, res) => {
     await roomRepository.createAndSave({
         id: roomId,
         status: "open",
+        mealType: ["fish", "meat", "vegetarian", "desert"][
+            Math.floor(Math.random() * 4)
+        ],
         ingredients: [],
     })
 

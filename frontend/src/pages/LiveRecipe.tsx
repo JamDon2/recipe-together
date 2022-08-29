@@ -12,8 +12,10 @@ const socket = io("http://localhost:3001")
 
 export default function LiveRecipe({
     setUpdate,
+    mealType,
 }: {
     setUpdate: (update: number | ((prevValue: number) => number)) => void
+    mealType: string
 }) {
     const [joined, setJoined] = useState(false)
     const [waiting, setWaiting] = useState(false)
@@ -58,7 +60,9 @@ export default function LiveRecipe({
             {waiting && (
                 <Alert severity="info">Waiting for people to join</Alert>
             )}
-            {joined && <JoinedSession onChosen={onChosen} />}
+            {joined && (
+                <JoinedSession onChosen={onChosen} mealType={mealType} />
+            )}
             {error && <RoomError message={error} />}
         </>
     )

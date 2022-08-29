@@ -38,9 +38,14 @@ export default function Recipe() {
 
             if (room?.status) {
                 if (room.status === "open") {
-                    setElement(<LiveRecipe setUpdate={setUpdate} />)
+                    setElement(
+                        <LiveRecipe
+                            setUpdate={setUpdate}
+                            mealType={room.mealType}
+                        />
+                    )
                 } else if (room.status === "completed") {
-                    setElement(<CompletedRecipe />)
+                    setElement(<CompletedRecipe mealType={room.mealType} />)
                 } else if (room.status === "in_progress") {
                     setElement(
                         <RoomError message="This session has already started" />

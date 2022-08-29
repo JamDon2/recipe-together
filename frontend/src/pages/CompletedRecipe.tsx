@@ -11,7 +11,7 @@ import {
     Paper,
 } from "@mui/material"
 
-export default function CompletedRecipe() {
+export default function CompletedRecipe({ mealType }: { mealType: string }) {
     const { id } = useParams()
     const [ingredients, setIngredients] = useState<string[]>()
 
@@ -52,6 +52,17 @@ export default function CompletedRecipe() {
                     </TableBody>
                 </Table>
             </TableContainer>
+            <span
+                style={{
+                    fontFamily: "Roboto",
+                    position: "absolute",
+                    left: "50%",
+                    marginTop: "10px",
+                    transform: "translateX(-50%)",
+                }}
+            >
+                The meal type was <strong>{mealType}</strong>
+            </span>
         </>
     )
 }

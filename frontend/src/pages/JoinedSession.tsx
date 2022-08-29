@@ -136,8 +136,10 @@ function AmountSelector({
 
 export default function JoinedSession({
     onChosen,
+    mealType,
 }: {
     onChosen: (ingredient: Ingredient, amount: string) => void
+    mealType: string
 }) {
     const [ingredient, setIngredient] = useState<Ingredient | null>(null)
     const [ingredientSelected, setIngredientSelected] = useState(false)
@@ -159,6 +161,9 @@ export default function JoinedSession({
     return (
         <>
             <div className="selector-container">
+                <span style={{ fontFamily: "Roboto", marginLeft: "10px" }}>
+                    Your meal type is <strong>{mealType}</strong>
+                </span>
                 <IngredientSelector
                     disabled={ingredientSelected}
                     onSubmit={onIngredientSelected}
