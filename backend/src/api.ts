@@ -28,7 +28,7 @@ router.get("/room/:id", async (req: Request<{ id: string }>, res) => {
 
 router.post("/room", async (req, res) => {
     const roomId = uuid()
-    const room = await roomRepository.createAndSave({
+    await roomRepository.createAndSave({
         id: roomId,
         status: "open",
         ingredients: [],
