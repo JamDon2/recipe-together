@@ -7,7 +7,7 @@ import "./JoinedSession.css"
 
 export type Ingredient = {
     name: string
-    unit: "volume" | "weight"
+    unit: "volume" | "weight" | "quantity"
 }
 
 function IngredientSelector({
@@ -92,7 +92,11 @@ function AmountSelector({
 
     const populateOptions = (input: string | null) => {
         if (ingredient?.unit) {
-            const units = { volume: ["ml", "l"], weight: ["g", "kg"] }
+            const units = {
+                volume: ["ml", "l"],
+                weight: ["g", "kg"],
+                quantity: ["pcs"],
+            }
 
             setAmountOptions(
                 units[ingredient.unit].map(value => `${input || 0} ${value}`)
