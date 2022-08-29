@@ -16,6 +16,10 @@
         "unit": "volume"
     },
     {
+        "name": "Milk",
+        "unit": "volume"
+    },
+    {
         "name": "Flour",
         "unit": "weight"
     },
@@ -29,6 +33,66 @@
     },
     {
         "name": "Rice",
+        "unit": "weight"
+    },
+    {
+        "name": "Tomato",
+        "unit": "weight"
+    },
+    {
+        "name": "Egg",
+        "unit": "quantity"
+    },
+    {
+        "name": "Beef",
+        "unit": "weight"
+    },
+    {
+        "name": "Chicken",
+        "unit": "weight"
+    },
+    {
+        "name": "Pork",
+        "unit": "weight"
+    },
+    {
+        "name": "Tuna",
+        "unit": "weight"
+    },
+    {
+        "name": "Sardines",
+        "unit": "weight"
+    },
+    {
+        "name": "Peanut",
+        "unit": "weight"
+    },
+    {
+        "name": "Onion",
+        "unit": "weight"
+    },
+    {
+        "name": "Garlic Clove",
+        "unit": "quantity"
+    },
+    {
+        "name": "Celery",
+        "unit": "weight"
+    },
+    {
+        "name": "Carrot",
+        "unit": "weight"
+    },
+    {
+        "name": "Potato",
+        "unit": "weight"
+    },
+    {
+        "name": "Cucumber",
+        "unit": "weight"
+    },
+    {
+        "name": "Yeast",
         "unit": "weight"
     }
 ]
