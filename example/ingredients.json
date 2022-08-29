@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Water",
+        "unit": "volume"
+    },
+    {
+        "name": "Olive Oil",
+        "unit": "volume"
+    },
+    {
+        "name": "Vinegar",
+        "unit": "volume"
+    },
+    {
+        "name": "Soy Sauce",
+        "unit": "volume"
+    },
+    {
+        "name": "Flour",
+        "unit": "weight"
+    },
+    {
+        "name": "Salt",
+        "unit": "weight"
+    },
+    {
+        "name": "Sugar",
+        "unit": "weight"
+    },
+    {
+        "name": "Rice",
+        "unit": "weight"
+    }
+]
