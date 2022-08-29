@@ -27,7 +27,7 @@ Data is accessed using an index built at startup.
     ```
     REDIS_URL=[YOUR REDIS CONNECT STRING]
     ```
--   Import example/ingredients.json into your Redis database at `ingredients` path
+-   Import `example/ingredients.json` into your Redis database at `ingredients` path
 -   To start the frontend, run `npm start` in the frontend terminal
 -   For the backend, run `npm run watch` in the backend terminal
 
